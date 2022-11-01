@@ -43,3 +43,19 @@ git remote add 远程仓库地址别名 远程仓库地址
 git push 远程仓库地址 分支名称 or git push 远程仓库地址别名 分支名称
 git push -u 远程仓库地址别名 分支名称
 -u 记住推送地址及分支，下次推送只需要输入git push即可
+
+Github仓库master分支到main分支迁移指南:
+克隆原仓库
+git clone xxxxxxx.git
+创建并推送main分支
+git checkout -b main
+git push origin main
+修改默认分支
+github setting
+删除master分支
+<1>
+删除本地master：
+git branch -d master
+<2>
+删除远程master：
+git push origin :master
