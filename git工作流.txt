@@ -76,3 +76,6 @@ drop：我要丢弃该commit（缩写:d）
 
 作者：zuopf769
 链接：https://juejin.cn/post/6844903600976576519
+
+groovyScript("def result = '';def params = \"${_1}\".replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); foams.size(); r(i = 0; i < pari++) {if(params[i] != '')result+='* @param ' + params[i] + ' ' +((i < params.size() - 1) ? '\n ' : '')}; return result == '' ? null : result", methodParameters())
+
